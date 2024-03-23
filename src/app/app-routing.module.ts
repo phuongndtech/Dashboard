@@ -23,7 +23,9 @@ const routes: Routes = [
       },
       {
         path: 'datasource',
-        component: DatasourceComponent,
+        loadChildren: () => 
+          import('./views/datasource/datasource.module').then((m)=> m.DatasourceModule),
+        
         data: {
           title: 'Data Source'
         }

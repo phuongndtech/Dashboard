@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 import { DefaultLayoutComponent } from './containers';
+import { DatasourceComponent } from './views/datasource/datasource.component';
 const routes: Routes = [
   {
     path: '',
@@ -19,8 +20,15 @@ const routes: Routes = [
         path: 'dashboard',
         loadChildren: () =>
           import('./views/dashboard/dashboard.module').then((m) => m.DashboardModule)
+      },
+      {
+        path: 'datasource',
+        component: DatasourceComponent,
+        data: {
+          title: 'Data Source'
+        }
       }
-    ]
+    ],
   },
   {path: '**', redirectTo: 'dashboard'}
 ];

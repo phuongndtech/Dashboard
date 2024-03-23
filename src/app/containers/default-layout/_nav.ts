@@ -9,5 +9,10 @@ export const navItems: INavData[] = [
       color: 'info',
       text: 'NEW'
     }
-  }
+  },
+  {
+    name: 'Datasource',
+    url: '/datasource',
+    iconComponent: { name: 'cil-star' }
+  },
 ];

@@ -5,7 +5,7 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './order.component.html',
-  styleUrl: './order.component.scss'
+  styleUrl: './order.component.css'
 })
 export class OrderComponent {
 

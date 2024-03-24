@@ -7,54 +7,15 @@
 </c-nav>
 <c-tab-content #tabContent="cTabContent">
     <c-tab-pane class="p-3">
-        <table cTable>
-            <thead>
-                <tr>
-                    <th scope="col">Order Number</th>
-                    <th scope="col">Order Date</th>
-                    <th scope="col">Item Name</th>
-                    <th scope="col">Quantity</th>
-                    <th scope="col">ProductPrice</th>
-                    <th scope="col">TotalProducts</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>&#64;mdo</td>
-                    <td>Otto</td>
-                    <td>&#64;mdo</td>
-                </tr>
-
-            </tbody>
-        </table>
+        <app-order></app-order>
     </c-tab-pane>
     <c-tab-pane class="p-3">
-        <table cTable>
-            <thead>
-                <tr>
-                    <th scope="col">Item Name</th>
-                    <th scope="col">Price</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                </tr>
-                <tr>
-                    <th scope="row">2</th>
-                    <td>Jacob</td>
-                </tr>
-            </tbody>
-        </table>
+        <app-product-price></app-product-price>
     </c-tab-pane>
     <c-tab-pane class="p-3">
-
+        <app-order></app-order>
     </c-tab-pane>
     <c-tab-pane class="p-3">
-
+        <app-product-price></app-product-price>
     </c-tab-pane>
 </c-tab-content>

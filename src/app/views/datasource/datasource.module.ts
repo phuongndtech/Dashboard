@@ -19,6 +19,8 @@ import { ChartjsModule } from '@coreui/angular-chartjs';
 
 import { DatasourceRoutingModule } from './datasource-routing.module';
 import { DatasourceComponent } from './datasource.component';
+import { OrderComponent } from '../order/order.component';
+import { ProductPriceComponent } from '../product-price/product-price.component';
 
 import { WidgetsModule } from '../widgets/widgets.module';
 
@@ -40,7 +42,9 @@ import { WidgetsModule } from '../widgets/widgets.module';
         ChartjsModule,
         AvatarModule,
         TableModule,
-        WidgetsModule
+        WidgetsModule,
+        OrderComponent,
+        ProductPriceComponent
     ],
     declarations: [DatasourceComponent]
 })
